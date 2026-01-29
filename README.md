@@ -85,18 +85,19 @@ The challenge is to **analyze textual patterns** and **identify spam messages ac
 mldeploy/
 │
 ├── home/
-│ ├── views.py # Prediction logic
-│ ├── utils.py # Text preprocessing
-│ ├── urls.py
-│ ├── templates/
-│ │ └── index.html # UI for testing predictions
-│ ├── savedModels/
-│ │ ├── spam_model.joblib
-│ │ └── vectorizer.joblib
+│   ├── views.py          # Prediction logic
+│   ├── utils.py          # Text preprocessing
+│   ├── urls.py
+│   ├── templates/
+│   │   └── index.html    # UI for testing predictions
+│   ├── savedModels/
+│   │   ├── spam_model.joblib
+│   │   └── vectorizer.joblib
 │
 ├── manage.py
 ├── requirements.txt
 └── README.md
+
 
 ---
 
@@ -118,11 +119,12 @@ http://127.0.0.1:8000/
 
 ## Sample Analysis Inputs
 
-- **Spam Message**
-- Congratulations! You have won ₹5,00,000. Click now to claim.
--
-- **Not Spam Message**
-- Please review the sales report and share your feedback.
+1. **Spam Message**
+   - Congratulations! You have won ₹5,00,000. Click now to claim.
+ 
+2. **Not Spam Message**
+   - Please review the sales report and share your feedback.
+
 
 
 
