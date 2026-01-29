@@ -82,21 +82,21 @@ The challenge is to **analyze textual patterns** and **identify spam messages ac
 
 ## Project Structure
 
-mldeploy/
-│
-├── home/
-│   ├── views.py          # Prediction logic
-│   ├── utils.py          # Text preprocessing
-│   ├── urls.py
-│   ├── templates/
-│   │   └── index.html    # UI for testing predictions
-│   ├── savedModels/
-│   │   ├── spam_model.joblib
-│   │   └── vectorizer.joblib
-│
-├── manage.py
-├── requirements.txt
-└── README.md
+mldeploy/ <br>
+│ <br>
+├── home/ <br>
+│   ├── views.py          # Prediction logic <br>
+│   ├── utils.py          # Text preprocessing <br>
+│   ├── urls.py <br>
+│   ├── templates/ <br>
+│   │   └── index.html    # UI for testing predictions <br>
+│   ├── savedModels/ <br>
+│   │   ├── spam_model.joblib <br>
+│   │   └── vectorizer.joblib <br>
+│ <br>
+├── manage.py <br>
+├── requirements.txt <br>
+└── README.md <br>
 
 
 ---
