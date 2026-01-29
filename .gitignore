@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+
+# Django
+db.sqlite3
+*.log
+
+# Virtual Environment
+venv/
+env/
+
+# ML files (optional: agar private rakhna chaho)
+# home/savedModels/*.joblib
+
+# OS
+.DS_Store
+Thumbs.db

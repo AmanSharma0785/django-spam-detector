@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spam Mail Checker</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .card {
+            background: #ffffff;
+            width: 420px;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            text-align: center;
+        }
+
+        textarea {
+            width: 100%;
+            height: 120px;
+            padding: 10px;
+            font-size: 14px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            resize: none;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 10px 25px;
+            background: #007bff;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+
+        .result {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .spam {
+            color: red;
+        }
+
+        .not-spam {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h2>Spam Mail Checker</h2>
+
+    <form method="POST">
+        {% csrf_token %}
+        <textarea name="message" placeholder="Type your message or email here..." required></textarea>
+        <br>
+        <button type="submit">Check Message</button>
+    </form>
+
+    {% if result %}
+        {% if "SPAM" in result %}
+            <div class="result spam">{{ result }}</div>
+        {% else %}
+            <div class="result not-spam">{{ result }}</div>
+        {% endif %}
+    {% endif %}
+</div>
+
+</body>
+</html>
