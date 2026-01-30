@@ -1,5 +1,5 @@
 # Spam Detection System – Data Analytics & Machine Learning Project
-[image](Media/project.png)
+![image](Media/project.png)
 
 **Deployed the app in Streamlit Cloud:** https://django-spam-detector-vncwbvthuuehh8k2santcz.streamlit.app/
 
@@ -124,10 +124,12 @@ http://127.0.0.1:8000/
 
 1. **Spam Message**
    - Congratulations! You have won ₹5,00,000. Click now to claim.
-   - [image](Media/spam.png)
+     
+   - ![image](Media/spam.png)
  
 2. **Not Spam Message**
    - Please review the sales report and share your feedback.
+     
    - ![image](Media/not_spam.png)
 
 
