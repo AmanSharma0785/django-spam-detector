@@ -1,4 +1,7 @@
 # Spam Detection System – Data Analytics & Machine Learning Project
+[image](Media/project.png)
+
+**Deployed the app in Streamlit Cloud:** https://django-spam-detector-vncwbvthuuehh8k2santcz.streamlit.app/
 
 This project is an end-to-end **Data Analytics + Machine Learning application** that analyzes text data and classifies messages or emails as **Spam** or **Not Spam**.  
 It demonstrates how data preprocessing, feature engineering, and statistical modeling are used to solve a real-world classification problem.
@@ -121,9 +124,11 @@ http://127.0.0.1:8000/
 
 1. **Spam Message**
    - Congratulations! You have won ₹5,00,000. Click now to claim.
+   - [image](Media/spam.png)
  
 2. **Not Spam Message**
    - Please review the sales report and share your feedback.
+   - ![image](Media/not_spam.png)
 
 
 
